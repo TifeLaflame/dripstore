@@ -1,2 +1,2 @@
 # dripstore
-Ecommerce Project
+Ecommerce Project for Vanarts
