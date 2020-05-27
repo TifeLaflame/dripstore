@@ -1,0 +1,294 @@
+:root { 
+    --textFont: 'Montserrat', sans-serif;
+    --secFont: 'Open Sans', sans-serif;
+    --bgColor: #fbf5f3;
+    --darkcolor: #020202;
+    --blueColor: #05204a;
+    --tempgrayColor: #fbfbfb;
+}
+/* GLOBAL CSS */
+
+body {font-family: var(--textFont);}
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+img {max-width: 100%;}
+
+ul {list-style: none;}
+
+a {
+    text-decoration: none;
+    font-family: var(--textFont);
+}
+section 
+{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.wrapper 
+{
+    max-width: 1440px;
+    margin:0 auto;
+    position: relative;
+    /*background-color: var(--tempgrayColor);*/
+}
+.container-fluid{}
+
+h1 {
+    font-family: var(--textFont);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: none;
+    color: none !important;
+}
+/* HEADER CSS */
+/* header#header {
+    z-index: 1;
+    position:fixed;
+    
+    left:0;
+    right: 0;  
+} */
+header#header {
+    z-index: 99;
+    top:0;
+    margin: 0 auto;
+    position: fixed;
+    right: 0px; 
+    left:0px;
+    max-width:1440px;
+}
+header .navbar #logo {
+    background-image: url('../imgs/newnew.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin:12px 0;
+}
+header .navbar #logo a {
+    text-indent: -9999px;
+    width: 100%;
+    height:100%;
+    float:left;
+}
+
+header .navbar {
+    margin: 0 auto;
+    padding: 0.5rem 2.8rem;
+}
+
+.navbar #navbarDropdown {
+    justify-content: flex-end;
+}
+.nav-item a {
+    color: var(--darkcolor);
+    font-family: var(--textFont);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar-expand-lg .navbar-nav .nav-icon img{
+    padding-bottom: .8rem;
+} 
+@media screen and (min-width:960px){
+    header .navbar #logo {
+        background-image: url('../imgs/newnew.png');
+        width:180px;
+        height:70px;
+        
+    }
+    .navbar-expand-lg .navbar-nav .nav-text {
+        padding-left: .8rem;
+        padding-right: .8rem;
+    }
+    
+}
+
+
+/* HERO SECTION CSS */
+main#home{padding-top: 120px;}
+main#productDet{padding-top: 150px;}
+div.heroSec 
+{
+    position: relative;
+    height: 70vh;
+    min-height: 650px;
+    max-height: 950px;
+}
+#twothird, #threethird {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 25% 2% 18%;
+}
+#twothird {
+    background-image: url("../imgs/arsenal-third-19-20.png");
+}
+#threethird {
+    background-image: url("../imgs/chelsea3-min.png");
+
+}
+.cta
+{
+    margin: 0 auto;
+    text-align: center;
+}
+.cta a
+{
+   text-transform: uppercase;
+}
+.btn {
+    display: inline-block;
+    transition: 0.5s background-color;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 9px 18px;
+    margin-top: 15px;
+}
+
+a.homeBtn {
+    color: var(--bgColor);
+    font-weight: 700;
+    background-color:var(--blueColor);
+}
+.row{position: relative;}
+
+@media screen and (min-width:960px){
+    .mainHeading h1 {
+        color: var(--darkcolor);
+        padding-left:5px;
+        padding-right:5px;    
+    }
+    a.homeBtn {
+        font-size: 18px;      
+    } 
+    
+}
+
+
+/* MOST POPULAR SECTION CSS */
+.popular h2 {
+    color: var(--darkcolor);
+    text-transform: uppercase;  
+    padding: 20px;
+    margin-top: 20px; 
+    font-weight: 600;
+}
+@media screen and (min-width:960px){
+    .popular h2 {
+        padding: 20px;
+        margin-top: 20px;   
+    }
+    a.homeBtn {
+        font-size: 18px;      
+    } 
+    
+}
+/* CATEGORY SECTION CSS */
+
+/* SUBSCRIBE SECTION CSS */
+.subSec h3{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+@media screen and (min-width:960px){
+    
+    
+}
+
+/* FOOTER SECTION CSS */
+.footerWrap{
+    background-color: var(--blueColor);
+    padding:50px;
+    text-align: center;
+} 
+.footerWrap p, .footerWrap span{
+    color: var(--blueColor);
+    font-weight: 600;
+} 
+@media screen and (min-width:960px){
+   .footerWrap{
+       background-color: #f6f6f6;
+   } 
+    
+}
+
+/* Product Details CSS */
+
+.thumbImgsWrap{
+    padding:15px 30px;
+    text-align: center;
+}
+.adjustImgs {
+    display: inline-block;
+    width: 25%;
+    padding:10px;
+    margin-left: -2%;
+}
+input[type ='radio'].iRadio
+{
+    visibility: hidden;
+}
+form#pForm .sizeWrap label{
+    border: 2px solid var(--darkcolor);
+    height: 40px;
+    width:50px;
+    line-height: 1em;
+    cursor: pointer;
+    letter-spacing: -.2px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-top:0.55rem;
+    margin-top: 15px;
+}
+.priceTag, form span, p.pDesc{
+    font-weight:600;
+}
+h2.pName{
+    font-weight:700;
+} 
+input[type='submit'].cartBtn {
+    display: inline-block;
+    background-color: var(--blueColor);
+    text-transform: uppercase;
+    color:var(--tempgrayColor);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+p.pDesc{
+    font-size: 1.2rem;
+}
+.imageDiv {
+    margin: 0 auto;
+    text-align: center;
+}
+.descWrap p {}
+@media screen and (min-width:960px){
+    h2.pName{
+        font-size:1.7rem;
+        padding-bottom:20px;
+    }
+
+    form span {
+        font-size: 14px;
+    } 
+    .imgHeight{
+        height:550px;
+    }
+    .halfSec{margin-top: 30px;}
+
+    .descWrap{
+        max-width:450px;
+
+    }
+    p.pDesc{
+        margin-top: 15px;
+    }
+    .descWrap p {
+        line-height: 1.8em;
+    }
+}
