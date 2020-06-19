@@ -116,13 +116,6 @@
                     </div>
                 </div>
             </section>
-        <!-- <section class="sub">
-            <div class="container">
-                <div class="subSec text-center">
-                    <h3 class="">Subscribe To Our Newsletter</h3>
-                </div>
-            </div>  
-        </section> -->
     </main>
     <footer>
         <div class="footerWrap container-fluid">
