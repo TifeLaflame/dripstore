@@ -12,12 +12,10 @@
 
                 $arrOProducts[] = $oProduct;
             }
-            // var_dump($arrOProducts); 
             return $arrOProducts;
         }
         public static function getFeatured()
         {
-            // "SELECT products.id, products.strName, products.strCoverImage, products.nPrice, products.strDesc, genders.strGender FROM products LEFT JOIN genders ON products.nGendersID = genders.id
             $arrProducts = DbCon::fetchData("SELECT products.id, products.strName, products.strCoverImage, products.nPrice, products.strDesc, genders.strGender FROM products LEFT JOIN genders ON products.nGendersID = genders.id WHERE bFeatured = 1");
             
             //we have to loop over the object array to get all the info 
