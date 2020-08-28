@@ -1,2 +1,3 @@
 # dripstore
-Ecommerce Project for Vanarts
+Personal Ecommerce Project for DripStore using MVC PHP Framework
+Work in Progress
